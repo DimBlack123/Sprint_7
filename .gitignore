@@ -1,0 +1,63 @@
+
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+.\target\allure-results\.
+
+
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+.idea
+
+/target/surefire-reports/2025-05-15T17-25-52_656.dumpstream
+/target/test-classes/com/example/BaseTest.class
+/target/surefire-reports/com.example.CreateCourierTest.txt
+/target/surefire-reports/com.example.CreateOrderTest.txt
+/target/surefire-reports/com.example.LoginCourierTest.txt
+/target/surefire-reports/com.example.OrderListTest.txt
+/target/test-classes/com/example/CreateCourierTest.class
+/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+/target/test-classes/com/example/CreateOrderTest.class
+/target/classes/org/example/ErrorResult.class
+/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+/target/test-classes/com/example/LoginCourierTest.class
+/target/classes/org/example/LoginResult.class
+/target/classes/org/example/OkResult.class
+/target/test-classes/com/example/OrderListTest.class
+/target/surefire-reports/TEST-com.example.CreateCourierTest.xml
+/target/surefire-reports/TEST-com.example.CreateOrderTest.xml
+/target/surefire-reports/TEST-com.example.LoginCourierTest.xml
+/target/surefire-reports/TEST-com.example.OrderListTest.xml
