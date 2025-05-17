@@ -1,11 +1,9 @@
-package com.example;
+package org.example;
 
 import io.qameta.allure.Step;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
 import org.junit.Test;
-
-import java.io.File;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertTrue;
@@ -20,11 +18,6 @@ public class OrderListTest extends BaseTest {
                 .oauth2(bearerToken)
                 .when()
                 .get("/orders");
-    }
-
-    @Step("Check status code")
-    public void checkStatusCode(Response response, int statusCode) {
-        response.then().assertThat().statusCode(statusCode);
     }
 
     @Step("Check array exists")

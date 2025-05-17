@@ -1,4 +1,4 @@
-package com.example;
+package org.example;
 
 import io.qameta.allure.Step;
 import io.qameta.allure.junit4.DisplayName;
@@ -26,11 +26,6 @@ public class CreateOrderTest extends BaseTest {
                 .post("/orders");
     }
 
-    @Step("Check status code")
-    public void checkStatusCode(Response response, int statusCode) {
-        response.then().assertThat().statusCode(statusCode);
-    }
-
     @Step("Check field track exists")
     public void checkFieldTrackExists(Response response) {
         assertTrue(response.body().asString().contains("track"));
@@ -39,6 +34,7 @@ public class CreateOrderTest extends BaseTest {
     @Parameters
     public static Object[] data() {
         return new Object[]{
+                // color BLACK and GRAY
                 "{\n" +
                         "  \"firstName\": \"Naruto\",\n" +
                         "  \"lastName\": \"Uchiha\",\n" +
@@ -52,6 +48,7 @@ public class CreateOrderTest extends BaseTest {
                         "    \"BLACK\", \"GRAY\"]\n" +
                         "}"
                 ,
+                // color BLACK
                 "{\n" +
                         "  \"firstName\": \"Naruto\",\n" +
                         "  \"lastName\": \"Uchiha\",\n" +
@@ -65,6 +62,7 @@ public class CreateOrderTest extends BaseTest {
                         "    \"BLACK\"]\n" +
                         "}"
                 ,
+                // no color
                 "{\n" +
                         "  \"firstName\": \"Naruto\",\n" +
                         "  \"lastName\": \"Uchiha\",\n" +
